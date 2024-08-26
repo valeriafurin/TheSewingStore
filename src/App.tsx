@@ -1,9 +1,13 @@
+import { CenteredLayout } from './components/CenteredLayout';
+
 function App() {
-	return (
-		<>
-			<div>Hello World!</div>
-		</>
-	);
+  return (
+    <>
+      <CenteredLayout>
+        <div>Hello World!</div>
+      </CenteredLayout>
+    </>
+  );
 }
 
 export default App;
