@@ -1,5 +1,3 @@
-// biome-ignore lint/style/useImportType: <explanation>
-import React from 'react';
 import styled from 'styled-components';
 
 type CenteredLayoutProps = {
@@ -12,10 +10,9 @@ const StyledContainer = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  box-sizing: border-box;
   padding: 20px;
 `;
 
-export const CenteredLayout: React.FC<CenteredLayoutProps> = ({ children }) => {
+export const CenteredLayout = ({ children }: CenteredLayoutProps) => {
   return <StyledContainer>{children}</StyledContainer>;
 };
