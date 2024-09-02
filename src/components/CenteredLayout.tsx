@@ -8,9 +8,9 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ECD8CE;
   height: 100vh;
   width: 100vw;
-  padding: 20px;
 `;
 
 export const CenteredLayout = ({ children }: CenteredLayoutProps) => {

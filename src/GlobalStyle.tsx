@@ -32,6 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 h1 {

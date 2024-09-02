@@ -1,10 +1,11 @@
 import { CenteredLayout } from './components/CenteredLayout';
+import { SewingProjectFolder } from './components/SewingProjectFolder';
 
 function App() {
   return (
     <>
       <CenteredLayout>
-        <div>Hello World!</div>
+        <SewingProjectFolder />
       </CenteredLayout>
     </>
   );
