@@ -4,10 +4,9 @@ import dress from '../assets/dress.jpg';
 import feathers from '../assets/feathers.jpg';
 
 const StyledDiv = styled.div`
-display: flex;
-align-items: center;
+display: grid;
+place-items: center;
 width: 100%;
-flex-direction: column;
 background-color: #E1A098;
 border: 2px solid black;
 `;
@@ -18,24 +17,29 @@ const StyledH1 = styled.h1`
 
 const StyledButton = styled.button`
     margin-bottom: 13px;
+    background-color: orange;
+    border-radius: 16px;
+        border: 2px solid black;
+        box-shadow: -10px 8px  #B58B87;
 `;
 
 const StyledCategoryAndImg = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin: 20px 0;
 `;
 
 const Img = styled.img`
-border: 1px solid black;
+border: 2px solid black;
 width: 150px;
 height: 150px;
 `;
 
 const StyledCategory = styled.p`
-border: 1px dotted red;
 border-radius: 16px;
-font-size: 10px;
-text-align: center;
-width: 50%;
+font-size: 15px;
+font-weight: bold;
+text-align: left;
 margin: 0;
 `;
 
@@ -73,7 +77,7 @@ export const SewingProjectFolder = () => {
           {imagesArray.map((image) => (
             <div key={image.id}>
               <Img src={image.src} alt={image.category} />
-              <StyledCategory>{image.category}</StyledCategory>
+              <StyledCategory>Category: {image.category}</StyledCategory>
             </div>
           ))}
         </StyledCategoryAndImg>
