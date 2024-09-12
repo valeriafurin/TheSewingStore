@@ -1,9 +1,14 @@
+import { CenteredLayout } from './components/CenteredLayout';
+import { SewingProjectFolder } from './components/SewingProjectFolder';
+
 function App() {
-	return (
-		<>
-			<div>Hello World!</div>
-		</>
-	);
+  return (
+    <>
+      <CenteredLayout>
+        <SewingProjectFolder />
+      </CenteredLayout>
+    </>
+  );
 }
 
 export default App;
