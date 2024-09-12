@@ -15,14 +15,6 @@ const StyledH1 = styled.h1`
     text-align: center;
 `;
 
-const StyledButton = styled.button`
-    margin-bottom: 13px;
-    background-color: orange;
-    border-radius: 16px;
-        border: 2px solid black;
-        box-shadow: -10px 8px  #B58B87;
-`;
-
 const StyledCategoryAndImg = styled.div`
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
@@ -44,10 +36,6 @@ margin: 0;
 `;
 
 export const SewingProjectFolder = () => {
-  const createFolder = () => {
-    console.log('Just logging for now');
-  };
-
   const imagesArray = [
     {
       src: dress,
@@ -70,9 +58,6 @@ export const SewingProjectFolder = () => {
     <>
       <StyledDiv>
         <StyledH1>Your latest projects:</StyledH1>
-        <StyledButton type="button" onClick={createFolder}>
-          Add a new Project!
-        </StyledButton>
         <StyledCategoryAndImg>
           {imagesArray.map((image) => (
             <div key={image.id}>
